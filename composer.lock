@@ -106,12 +106,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:contenir/contenir-extension-api.git",
-                "reference": "8ff6237302801f177ed962df24eff86627e4ebf9"
+                "reference": "e2cd1541f29075485854ec6fea2261900d000ab0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contenir/contenir-extension-api/zipball/8ff6237302801f177ed962df24eff86627e4ebf9",
-                "reference": "8ff6237302801f177ed962df24eff86627e4ebf9",
+                "url": "https://api.github.com/repos/contenir/contenir-extension-api/zipball/e2cd1541f29075485854ec6fea2261900d000ab0",
+                "reference": "e2cd1541f29075485854ec6fea2261900d000ab0",
                 "shasum": ""
             },
             "require": {
@@ -203,7 +203,7 @@
                 "issues": "https://github.com/contenir/contenir-extension-api/issues",
                 "source": "https://github.com/contenir/contenir-extension-api"
             },
-            "time": "2026-10-20T23:25:42+00:00"
+            "time": "2026-10-20T23:49:11+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
