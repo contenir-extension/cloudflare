@@ -6,6 +6,12 @@ adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased] - 2026-10-21
 
+### Changed
+
+- Requires contenir/extension-api `^0.6` and contenir/cdn `^0.1`, where it required their feature branches, which are
+  merged and deleted. Until those are tagged, both resolve to their `main` (0.6.x-dev and 0.1.x-dev). contenir/cdn
+  still comes through a `vcs` entry, since it isn't on Packagist yet.
+
 ### Added
 
 - The Cloudflare settings section (Site Settings > Integration > Cloudflare): the zone ID, email and Global API Key

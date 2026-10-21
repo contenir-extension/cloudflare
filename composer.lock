@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0dababd2c57930ec6496739d65950fc",
+    "content-hash": "9833a247e5d7ec684f26f577898edc66",
     "packages": [
         {
             "name": "contenir/cdn",
-            "version": "dev-feat/cdn-library",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "git@github.com:contenir/contenir-cdn.git",
-                "reference": "43de7ce040625265d763790d0c06d48414af77fe"
+                "reference": "cca56b6a3d70577fabf3e38d891a42083898f63c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contenir/contenir-cdn/zipball/43de7ce040625265d763790d0c06d48414af77fe",
-                "reference": "43de7ce040625265d763790d0c06d48414af77fe",
+                "url": "https://api.github.com/repos/contenir/contenir-cdn/zipball/cca56b6a3d70577fabf3e38d891a42083898f63c",
+                "reference": "cca56b6a3d70577fabf3e38d891a42083898f63c",
                 "shasum": ""
             },
             "require": {
@@ -34,6 +34,7 @@
                 "nyholm/psr7": "^1.8.2",
                 "phpunit/phpunit": "^11.5.42"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -98,20 +99,20 @@
                 "issues": "https://github.com/contenir/contenir-cdn/issues",
                 "source": "https://github.com/contenir/contenir-cdn"
             },
-            "time": "2026-10-20T23:34:22+00:00"
+            "time": "2026-10-20T23:54:48+00:00"
         },
         {
             "name": "contenir/extension-api",
-            "version": "dev-feat/provide",
+            "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "git@github.com:contenir/contenir-extension-api.git",
-                "reference": "e2cd1541f29075485854ec6fea2261900d000ab0"
+                "url": "https://github.com/contenir/contenir-extension-api.git",
+                "reference": "080cca513844b6bfc49801259b55bf018256be5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contenir/contenir-extension-api/zipball/e2cd1541f29075485854ec6fea2261900d000ab0",
-                "reference": "e2cd1541f29075485854ec6fea2261900d000ab0",
+                "url": "https://api.github.com/repos/contenir/contenir-extension-api/zipball/080cca513844b6bfc49801259b55bf018256be5d",
+                "reference": "080cca513844b6bfc49801259b55bf018256be5d",
                 "shasum": ""
             },
             "require": {
@@ -134,6 +135,7 @@
                 "nyholm/psr7": "A PSR-7 and PSR-17 implementation for the in-memory host (Testing\\InMemoryHost), or use any other",
                 "phpunit/phpunit": "Runs the conformance suite (Conformance\\Abstract*ConformanceTestCase) against a host"
             },
+            "default-branch": true,
             "bin": [
                 "bin/extension-boundary"
             ],
@@ -148,45 +150,7 @@
                     "Contenir\\Extension\\Api\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Contenir\\Extension\\Api\\Tests\\": "tests/",
-                    "Contenir\\Extension\\Example\\": "tests/Fixture/Example/src/",
-                    "Contenir\\Extension\\Example\\Tests\\": "tests/Fixture/Example/tests/"
-                }
-            },
-            "scripts": {
-                "check": [
-                    "@cs-check",
-                    "@static-analysis",
-                    "@test",
-                    "@test-integration",
-                    "@mutation-test"
-                ],
-                "cs-check": [
-                    "mago format --check",
-                    "mago lint"
-                ],
-                "cs-fix": [
-                    "mago format",
-                    "mago lint --fix"
-                ],
-                "static-analysis": [
-                    "mago analyze"
-                ],
-                "test": [
-                    "phpunit --colors=always --testsuite unit"
-                ],
-                "test-integration": [
-                    "phpunit --colors=always --testsuite integration"
-                ],
-                "test-coverage": [
-                    "phpunit --colors=always --coverage-clover clover.xml"
-                ],
-                "mutation-test": [
-                    "infection"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -203,7 +167,7 @@
                 "issues": "https://github.com/contenir/contenir-extension-api/issues",
                 "source": "https://github.com/contenir/contenir-extension-api"
             },
-            "time": "2026-10-20T23:49:11+00:00"
+            "time": "2026-10-21T00:00:32+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -5238,24 +5202,9 @@
             "time": "2026-10-05T23:14:19+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "contenir/cdn",
-            "version": "dev-feat/cdn-library",
-            "alias": "0.1.0",
-            "alias_normalized": "0.1.0.0"
-        },
-        {
-            "package": "contenir/extension-api",
-            "version": "dev-feat/provide",
-            "alias": "0.6.0",
-            "alias_normalized": "0.6.0.0"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "contenir/cdn": 20,
-        "contenir/extension-api": 20,
         "contenir/contenir-qa-tools": 20
     },
     "prefer-stable": true,
