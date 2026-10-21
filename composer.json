@@ -19,16 +19,12 @@
         {
             "type": "vcs",
             "url": "https://github.com/contenir/contenir-cdn"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/contenir/contenir-extension-api"
         }
     ],
     "require": {
         "php": "~8.3.0 || ~8.4.0 || ~8.5.0",
-        "contenir/cdn": "dev-feat/cdn-library as 0.1.0",
-        "contenir/extension-api": "dev-feat/provide as 0.6.0",
+        "contenir/cdn": "^0.1",
+        "contenir/extension-api": "^0.6",
         "guzzlehttp/guzzle": "^7.9",
         "psr/http-client": "^1.0.3",
         "psr/http-factory": "^1.1",
