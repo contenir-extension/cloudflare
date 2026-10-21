@@ -24,7 +24,7 @@
     "require": {
         "php": "~8.3.0 || ~8.4.0 || ~8.5.0",
         "contenir/contenir-cdn": "^0.1",
-        "contenir/extension-api": "^0.6",
+        "contenir/contenir-extension-api": "^0.6.1 || ^0.7",
         "guzzlehttp/guzzle": "^7.9",
         "psr/http-client": "^1.0.3",
         "psr/http-factory": "^1.1",
