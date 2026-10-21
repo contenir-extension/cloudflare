@@ -8,10 +8,10 @@
     "packages": [
         {
             "name": "contenir/cdn",
-            "version": "dev-main",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:contenir/contenir-cdn.git",
+                "url": "https://github.com/contenir/contenir-cdn.git",
                 "reference": "cca56b6a3d70577fabf3e38d891a42083898f63c"
             },
             "dist": {
@@ -34,7 +34,6 @@
                 "nyholm/psr7": "^1.8.2",
                 "phpunit/phpunit": "^11.5.42"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -103,7 +102,7 @@
         },
         {
             "name": "contenir/extension-api",
-            "version": "dev-main",
+            "version": "v0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contenir/contenir-extension-api.git",
@@ -135,7 +134,6 @@
                 "nyholm/psr7": "A PSR-7 and PSR-17 implementation for the in-memory host (Testing\\InMemoryHost), or use any other",
                 "phpunit/phpunit": "Runs the conformance suite (Conformance\\Abstract*ConformanceTestCase) against a host"
             },
-            "default-branch": true,
             "bin": [
                 "bin/extension-boundary"
             ],
