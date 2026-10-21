@@ -8,7 +8,7 @@ and every purge is logged with Cloudflare's request id. It replaces the CMS's bu
 `CloudflarePurger`. The `integration.cloudflare.*` keys are unchanged, so moving a site to it needs no new settings
 until someone adds a token.
 
-The work itself is in [contenir/cdn](https://github.com/contenir/contenir-cdn): the purger interface, batching, URL
+The work itself is in [contenir/contenir-cdn](https://github.com/contenir/contenir-cdn): the purger interface, batching, URL
 checks and the Cloudflare client. This add-on adapts it to the CMS.
 
 ## What it adds
@@ -35,7 +35,7 @@ Make the token in Cloudflare under My Profile > API Tokens, for the site's zone 
 | Zone > Cache Purge > Purge | every purge |
 | Zone > Zone > Read | Test connection, and checking Purge URLs against the zone's domain |
 
-**The purger the CMS calls** (P13). The add-on provides contenir/cdn's `PurgerInterface` through
+**The purger the CMS calls** (P13). The add-on provides contenir/contenir-cdn's `PurgerInterface` through
 `Registry::provide()`. While the add-on is enabled, the CMS's cache clearing and file browser purge through it; while
 it is disabled, nothing purges. It reads the settings at each purge:
 
@@ -130,7 +130,7 @@ with the screen again, holding what still needs attention, plus its messages.
   (`Connections::GUZZLE`), and tests hand every class that uses it a `Connections` over `FakeHttpClient`, through
   `InMemoryHost::boot()`'s services. Tests never reach Cloudflare.
 - Mask secrets with `Field::password()`, which also keeps them in local settings. Never let a secret reach a message:
-  contenir/cdn takes it out of every message it writes, and doesn't chain the HTTP client's exceptions, since their
+  contenir/contenir-cdn takes it out of every message it writes, and doesn't chain the HTTP client's exceptions, since their
   requests carry the headers.
 
 ### Testing

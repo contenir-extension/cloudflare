@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9833a247e5d7ec684f26f577898edc66",
+    "content-hash": "c51293707d5e4de09d0c26aa26d0e830",
     "packages": [
         {
-            "name": "contenir/cdn",
+            "name": "contenir/contenir-cdn",
             "version": "v0.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/contenir/contenir-cdn.git",
-                "reference": "cca56b6a3d70577fabf3e38d891a42083898f63c"
+                "url": "git@github.com:contenir/contenir-cdn.git",
+                "reference": "f390e36ac03f9cfcd022fe02a08486f8a984290d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contenir/contenir-cdn/zipball/cca56b6a3d70577fabf3e38d891a42083898f63c",
-                "reference": "cca56b6a3d70577fabf3e38d891a42083898f63c",
+                "url": "https://api.github.com/repos/contenir/contenir-cdn/zipball/f390e36ac03f9cfcd022fe02a08486f8a984290d",
+                "reference": "f390e36ac03f9cfcd022fe02a08486f8a984290d",
                 "shasum": ""
             },
             "require": {
@@ -98,7 +98,7 @@
                 "issues": "https://github.com/contenir/contenir-cdn/issues",
                 "source": "https://github.com/contenir/contenir-cdn"
             },
-            "time": "2026-10-20T23:54:48+00:00"
+            "time": "2026-10-21T00:44:35+00:00"
         },
         {
             "name": "contenir/extension-api",

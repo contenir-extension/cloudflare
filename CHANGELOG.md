@@ -4,6 +4,13 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project
 adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.1.1] - 2026-10-21
+
+### Changed
+
+- Requires contenir/contenir-cdn `^0.1`, the library's name after its repository. 0.1.0 required it as `contenir/cdn`,
+  a name that never reached Packagist. The namespace, `Contenir\Cdn\`, is unchanged, so nothing else changes.
+
 ## [0.1.0] - 2026-10-21
 
 The first release. Requires contenir/extension-api `^0.6` and contenir/cdn `^0.1`.
