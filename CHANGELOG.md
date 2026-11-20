@@ -4,6 +4,15 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project
 adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.2.0] - 2026-11-20
+
+### Added
+
+- A check, "Cloudflare connection", in the CMS update check and on the add-on's Extensions card. Until now an add-on
+  with no zone or credentials, or ones Cloudflare refused, purged nothing and said nothing. It warns with what is still
+  to enter, fails with Cloudflare's own reason when it refuses, warns while the Global API Key is in use, and passes
+  with the zone it reached, each with a guided fix to Site Settings > Integration > Cloudflare.
+
 ## [0.1.4] - 2026-11-05
 
 ### Changed
