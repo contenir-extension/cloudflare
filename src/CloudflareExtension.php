@@ -7,6 +7,7 @@ namespace Contenir\Extension\Cloudflare;
 use Contenir\Cdn\PurgerInterface;
 use Contenir\Extension\Api\ExtensionInterface;
 use Contenir\Extension\Api\Registry;
+use Contenir\Extension\Cloudflare\Check\ConnectionCheck;
 use Contenir\Extension\Cloudflare\Field\ZoneIdField;
 use Contenir\Extension\Cloudflare\Handler\PurgeUrls;
 use Contenir\Extension\Cloudflare\Purge\PurgerFactory;
@@ -28,5 +29,6 @@ final class CloudflareExtension implements ExtensionInterface
         $registry->settingsSection(CloudflareSection::define($registry->handle()));
         $registry->handler(PurgeUrls::NAME, PurgeUrls::class);
         $registry->provide(PurgerInterface::class, PurgerFactory::class);
+        $registry->diagnostic(ConnectionCheck::NAME, ConnectionCheck::class);
     }
 }

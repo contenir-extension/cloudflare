@@ -5,11 +5,13 @@ declare(strict_types=1);
 namespace Contenir\Extension\Cloudflare\Tests\Unit;
 
 use Contenir\Cdn\PurgerInterface;
+use Contenir\Extension\Api\Diagnostic\DiagnosticDeclaration;
 use Contenir\Extension\Api\Field\FieldTypeDeclaration;
 use Contenir\Extension\Api\Handle;
 use Contenir\Extension\Api\Handler\HandlerDeclaration;
 use Contenir\Extension\Api\Registry;
 use Contenir\Extension\Api\Service\ServiceDeclaration;
+use Contenir\Extension\Cloudflare\Check\ConnectionCheck;
 use Contenir\Extension\Cloudflare\CloudflareExtension;
 use Contenir\Extension\Cloudflare\CloudflareSection;
 use Contenir\Extension\Cloudflare\Field\ZoneIdField;
@@ -23,7 +25,7 @@ use PHPUnit\Framework\TestCase;
 final class CloudflareExtensionTest extends TestCase
 {
     #[Test]
-    public function declaresItsSectionFieldTypeScreenAndPurger(): void
+    public function declaresItsSectionFieldTypeScreenPurgerAndCheck(): void
     {
         $registry = new Registry('cloudflare');
         (new CloudflareExtension())->register($registry);
@@ -39,12 +41,14 @@ final class CloudflareExtensionTest extends TestCase
                     '/admin/extension/cloudflare/purge-urls',
                 )],
                 [PurgerInterface::class => new ServiceDeclaration(PurgerInterface::class, PurgerFactory::class)],
+                ['connection' => new DiagnosticDeclaration('connection', ConnectionCheck::class)],
             ],
             [
                 $registration->fieldTypes,
                 $registration->settingsSections,
                 $registration->handlers,
                 $registration->services,
+                $registration->diagnostics,
             ],
         );
     }
